@@ -18,7 +18,7 @@ namespace TheFundersJunction.Controllers
 
         // Save a profile (Create a saved profile entry)
         [HttpPost("{userId}/save/{savedUserId}")]
-        public async Task<IActionResult> SaveProfile(int userId, int savedUserId)
+        public async Task<ActionResult<SavedProfile>> SaveProfile(int userId, int savedUserId)
         {
             if (userId == savedUserId)
                 return BadRequest("You cannot save your own profile.");
@@ -38,7 +38,7 @@ namespace TheFundersJunction.Controllers
 
         // Get all saved profiles for a user
         [HttpGet("{userId}/saved")]
-        public async Task<IActionResult> GetSavedProfiles(int userId)
+        public async Task<ActionResult<List<SavedProfile>>> GetSavedProfiles(int userId)
         {
             var savedProfiles = await _context.SavedProfiles
                                               .Where(sp => sp.UserId == userId)
@@ -53,7 +53,7 @@ namespace TheFundersJunction.Controllers
 
         // Delete a saved profile (Unsave a profile)
         [HttpDelete("{userId}/unsave/{savedProfileId}")]
-        public async Task<IActionResult> UnsaveProfile(int userId, int savedProfileId)
+        public async Task<ActionResult> UnsaveProfile(int userId, int savedProfileId)
         {
             var savedProfile = await _context.SavedProfiles
                                              .FirstOrDefaultAsync(sp => sp.SavedProfileId == savedProfileId && sp.UserId == userId);
