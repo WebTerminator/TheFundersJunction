@@ -107,6 +107,7 @@
 /Users/alessandrosanteseadmin/TheFundersJunction/obj/Debug/net9.0/TheFundersJunction.csproj.CoreCompileInputs.cache
 /Users/alessandrosanteseadmin/TheFundersJunction/obj/Debug/net9.0/TheFundersJunction.MvcApplicationPartsAssemblyInfo.cs
 /Users/alessandrosanteseadmin/TheFundersJunction/obj/Debug/net9.0/TheFundersJunction.MvcApplicationPartsAssemblyInfo.cache
+/Users/alessandrosanteseadmin/TheFundersJunction/obj/Debug/net9.0/TheFundersJunction.sourcelink.json
 /Users/alessandrosanteseadmin/TheFundersJunction/obj/Debug/net9.0/scopedcss/bundle/TheFundersJunction.styles.css
 /Users/alessandrosanteseadmin/TheFundersJunction/obj/Debug/net9.0/staticwebassets.build.json
 /Users/alessandrosanteseadmin/TheFundersJunction/obj/Debug/net9.0/staticwebassets.development.json
